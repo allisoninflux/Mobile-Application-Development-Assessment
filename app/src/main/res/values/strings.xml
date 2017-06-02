@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Student Schedule</string>
+    <string name="school_name">Western Governors University</string>
+    <string name="degree">B. S. Software Development</string>
+
+    <!-- Labels for accessibility -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="notes_image_view">Notes Image</string>
+
+    <!-- Menu actions -->
+    <string name="action_share">Share</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_close">Close</string>
+
+    <!-- Page Titles -->
+    <string name="title_terms">Terms</string>
+    <string name="title_term_details">Term Details</string>
+    <string name="title_courses">Courses</string>
+    <string name="title_course_details">Course Details</string>
+    <string name="title_assessments">Assessments</string>
+    <string name="title_assessment_details">Assessment Details</string>
+    <string name="title_settings">Settings</string>
+
+    <!-- Drawer Navigation Selections -->
+
+    <!-- Labels -->
+    <string name="label_title">Title</string>
+    <string name="label_description">Description</string>
+    <string name="label_start_date">Start Date</string>
+    <string name="label_end_date">End Date</string>
+    <string name="label_remind_me">Remind Me</string>
+    <string name="label_due_date">Due Date</string>
+    <string name="placeholder_date">88/88/8888</string>
+    <string name="placeholder_text">Some text goes here.</string>
+    <string name="label_term">Term: </string>
+    <string name="label_course">Course: </string>
+    <string name="label_mentor_info">Mentor Info</string>
+    <string name="label_name">Name</string>
+    <string name="label_phone_number">Phone Number</string>
+    <string name="label_email_address">Email Address</string>
+    <string name="label_notes">Notes</string>
+
+    <!-- Notifications -->
+    <string name="start_after_end">Start date must come before (or be the same as) the end date.</string>
+    <string name="end_before_start">End date must come after (or be the same as) the start date.</string>
+    <string name="external_storage_permission">Saving notes requires writing to the external storage.</string>
+
+    <!-- Intents -->
+    <string name="intent_action">intent_action</string>
+    <string name="intent_action_nothing">intent_action_nothing</string>
+    <string name="intent_action_delete">intent_action_delete</string>
+    <string name="intent_action_save">intent_action_save</string>
+    <string name="intent_parent_id">intent_parent_id</string>
+    <string name="intent_child_id">intent_child_id</string>
+
+    <!-- Home Fragment -->
+    <string name="home_current_term">Current Term:</string>
+    <string name="home_current_term_none">No Active Terms</string>
+    <string name="home_current_courses">Current Courses:</string>
+    <string name="home_current_courses_none">No Active Courses</string>
+    <string name="home_generate_dummy_data">Generate Dummy Data</string>
+
+    <!-- Terms -->
+    <string name="term_info">Term Info</string>
+    <string name="term_course_list">Courses</string>
+    <string name="term_new_title">New Term</string>
+    <string name="term_prevent_delete">One or more of the terms could not be deleted.\n
+                                        A term must be empty in order to be deleted.</string>
+    <string name="term_reminder">Course Reminder</string>
+    <string name="term_reminder_start_day">A term starts in the next 24 hours.</string>
+    <string name="term_reminder_start_week">A terms starts in the next week.</string>
+    <string name="term_reminder_end_day">A terms ends in the next 24 hours.</string>
+    <string name="term_reminder_end_week">A terms ends in the next week.</string>
+
+    <!-- Courses -->
+    <string name="course_info">Course Info</string>
+    <string name="course_assessment_list">Assessments</string>
+    <string name="course_new_title">New Course</string>
+    <string name="course_new_description">New Course Description</string>
+    <string-array name="course_status_array">
+        <item>Enrolled</item>
+        <item>In Progress</item>
+        <item>Assessment Scheduled</item>
+        <item>Assessment Submitted</item>
+        <item>Complete</item>
+        <item>Dropped</item>
+    </string-array>
+    <string name="course_add_new_mentor">Add New Mentor</string>
+    <string name="course_reminder">Course Reminder</string>
+    <string name="course_reminder_start_day">A course starts in the next 24 hours.</string>
+    <string name="course_reminder_start_week">A course starts in the next week.</string>
+    <string name="course_reminder_end_day">A course ends in the next 24 hours.</string>
+    <string name="course_reminder_end_week">A course ends in the next week.</string>
+
+    <!-- Assessments -->
+    <string name="assessment_info">Assessment Info</string>
+    <string name="assessment_new_title">New Assessment</string>
+    <string-array name="assessment_type_array">
+        <item>Performance</item>
+        <item>Objective</item>
+    </string-array>
+    <string name="assessment_reminder">Assessment Reminder</string>
+    <string name="assessment_reminder_day">An assessment is due in the next 24 hours.</string>
+    <string name="assessment_reminder_week">An assessment is due in the next week.</string>
+
+    <!-- Notes -->
+    <string name="select_note_type_dialog">Which type of note would you like to add?</string>
+    <string-array name="note_types">
+        <item>Text</item>
+        <item>Image</item>
+    </string-array>
+    <string name="notes_course_directory">courses</string>
+    <string name="notes_assessments_directory">assessments</string>
+
+    <!-- Strings related to Settings -->
+    <string name="pref_default_term_length_key">default_term_length</string>
+    <string name="pref_default_term_length">Default Term Length</string>
+    <string name="pref_default_term_length_summary">Set the number of months long for a new term</string>
+    <string name="pref_default_term_length_initial_value">6</string>
+
+    <string name="pref_default_course_length_key">default_course_length</string>
+    <string name="pref_default_course_length">Default Course Length</string>
+    <string name="pref_default_course_length_summary">Set the number of months long for a new course</string>
+    <string name="pref_default_course_length_initial_value">1</string>
+
+    <string-array name="pref_default_length_titles">
+        <item>1 Month</item>
+        <item>3 Months</item>
+        <item>6 Months</item>
+        <item>9 Months</item>
+        <item>12 Months</item>
+    </string-array>
+
+    <string-array name="pref_default_length_values">
+        <item>1</item>
+        <item>3</item>
+        <item>6</item>
+        <item>9</item>
+        <item>12</item>
+    </string-array>
+
+    <string name="pref_school_name_key">school_name</string>
+    <string name="pref_school_name">School Name</string>
+    <string name="pref_degree_key">degree</string>
+    <string name="pref_degree">Course of Study (Degree)</string>
+
+    <string name="pref_default_assessment_type_key">default_assessment_type</string>
+    <string name="pref_default_assessment_type">Default Assessment Type</string>
+    <string name="pref_default_assessment_type_summary">Set the type of exam for a new assessment</string>
+    <string-array name="pref_default_assessment_types">
+        <item>Objective</item>
+        <item>Performance</item>
+    </string-array>
+    <string name="pref_default_assessment_type_initial_value">Performance</string>
+
+    <string name="pref_notify_terms_key">notify_terms</string>
+    <string name="pref_notify_terms_title">Term Notifications</string>
+    <string name="pref_notify_terms_summary">Receive a reminder before a term ends.</string>
+
+    <string name="pref_notify_courses_key">notify_courses</string>
+    <string name="pref_notify_courses_title">Course Notifications</string>
+    <string name="pref_notify_courses_summary">Receive a reminder before a course ends.</string>
+
+    <string name="pref_notify_assessments_key">notify_assessments</string>
+    <string name="pref_notify_assessments_title">Assessment Notifications</string>
+    <string name="pref_notify_assessments_summary">Receive a reminder before an assessment is due.</string>
+
+</resources>

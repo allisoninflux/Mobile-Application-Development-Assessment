@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/drawer_header_height"
+    android:background="@color/colorPrimary"
+    tools:ignore="Overdraw">
+
+    <TextView
+        android:id="@+id/school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/degree"
+        android:layout_marginStart="@dimen/text_margin"
+        android:gravity="start"
+        android:paddingBottom="4dp"
+        android:text="@string/school_name"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline" />
+
+    <TextView
+        android:id="@+id/degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/school"
+        android:layout_marginBottom="8dp"
+        android:gravity="start"
+        android:text="@string/degree"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="?android:attr/textColorPrimary" />
+
+
+</RelativeLayout>

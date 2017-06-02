@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/terms"
+            android:title="@string/title_terms" />
+
+        <item
+            android:id="@+id/courses"
+            android:checked="false"
+            android:title="@string/title_courses" />
+
+        <item
+            android:id="@+id/assessments"
+            android:checked="false"
+            android:title="@string/title_assessments" />
+
+    </group>
+    <group android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/settings"
+            android:checked="false"
+            android:title="@string/title_settings"
+            android:icon="@drawable/ic_settings"/>
+    </group>
+</menu>

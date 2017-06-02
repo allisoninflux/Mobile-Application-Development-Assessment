@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:defaultValue="@string/school_name"
+        android:key="@string/pref_school_name_key"
+        android:title="@string/pref_school_name" />
+
+    <EditTextPreference
+        android:defaultValue="@string/degree"
+        android:key="@string/pref_degree_key"
+        android:title="@string/pref_degree" />
+
+    <ListPreference
+        android:defaultValue="@string/pref_default_term_length_initial_value"
+        android:entries="@array/pref_default_length_titles"
+        android:entryValues="@array/pref_default_length_values"
+        android:key="@string/pref_default_term_length_key"
+        android:summary="@string/pref_default_term_length_summary"
+        android:title="@string/pref_default_term_length" />
+
+    <ListPreference
+        android:defaultValue="@string/pref_default_course_length_initial_value"
+        android:entries="@array/pref_default_length_titles"
+        android:entryValues="@array/pref_default_length_values"
+        android:key="@string/pref_default_course_length_key"
+        android:summary="@string/pref_default_course_length_summary"
+        android:title="@string/pref_default_course_length" />
+
+    <ListPreference
+        android:defaultValue="@string/pref_default_assessment_type_initial_value"
+        android:entries="@array/pref_default_assessment_types"
+        android:entryValues="@array/pref_default_assessment_types"
+        android:key="@string/pref_default_assessment_type_key"
+        android:summary="@string/pref_default_assessment_type_summary"
+        android:title="@string/pref_default_assessment_type" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/pref_notify_terms_key"
+        android:title="@string/pref_notify_terms_title"
+        android:summary="@string/pref_notify_terms_summary"/>
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/pref_notify_courses_key"
+        android:title="@string/pref_notify_courses_title"
+        android:summary="@string/pref_notify_courses_summary"/>
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/pref_notify_assessments_key"
+        android:title="@string/pref_notify_assessments_title"
+        android:summary="@string/pref_notify_assessments_summary"/>
+
+
+</PreferenceScreen>

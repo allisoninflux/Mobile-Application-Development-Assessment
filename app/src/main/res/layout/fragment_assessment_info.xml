@@ -1,0 +1,109 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            xmlns:tools="http://schemas.android.com/tools"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            tools:context="com.example.echols.studentschedule.fragments.AssessmentInfoFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/labelCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_margin_small"
+            android:layout_marginTop="@dimen/text_margin_small"
+            android:text="@string/label_course"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/textViewCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_margin_small"
+            android:text="@string/label_course"
+            app:layout_constraintBaseline_toBaselineOf="@+id/labelCourse"
+            app:layout_constraintLeft_toRightOf="@+id/labelCourse"/>
+
+        <View
+            android:id="@+id/horizontal_divider1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/text_margin_small"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelCourse"/>
+
+        <Spinner
+            android:id="@+id/assessmentTypeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/text_margin_small"
+            android:layout_marginStart="@dimen/text_margin_small"
+            android:layout_marginTop="@dimen/text_margin_small"
+            android:entries="@array/assessment_type_array"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontal_divider1"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/titleTextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="@dimen/text_margin_small"
+            android:layout_marginStart="@dimen/text_margin_small"
+            android:layout_marginTop="@dimen/text_margin_small"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/assessmentTypeSpinner">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editTextAssessmentTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/label_title"
+                android:inputType="text"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/labelAssessmentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin_small"
+            android:text="@string/label_due_date"
+            android:textAppearance="@android:style/TextAppearance.Material.Small"
+            app:layout_constraintLeft_toLeftOf="@+id/buttonAssessmentDate"
+            app:layout_constraintRight_toRightOf="@+id/buttonAssessmentDate"
+            app:layout_constraintTop_toBottomOf="@+id/titleTextInputLayout"/>
+
+        <Button
+            android:id="@+id/buttonAssessmentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin_tiny"
+            android:text="@string/placeholder_date"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelAssessmentDate"/>
+
+        <Switch
+            android:id="@+id/alertSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin_tiny"
+            android:switchPadding="@dimen/text_margin_tiny"
+            android:text="@string/label_remind_me"
+            app:layout_constraintLeft_toLeftOf="@+id/buttonAssessmentDate"
+            app:layout_constraintRight_toRightOf="@+id/buttonAssessmentDate"
+            app:layout_constraintTop_toBottomOf="@+id/buttonAssessmentDate"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>
